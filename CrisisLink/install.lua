@@ -18,13 +18,13 @@ elseif input == "2" then
     elseif input == "3" then
     textutils.slowPrint("Updating CrisisLink Server")
     print("Removing Old Version...")
-    shell.run("rm clserver")
+    shell.run("rm clserver.lua")
     sleep(0.5)
     shell.run("wget https://raw.githubusercontent.com/nexus331/CrisisLink_EWS/refs/heads/main/CrisisLink/clserver.lua")
     elseif input == "4" then
     textutils.slowPrint("Updating CrisisLink Client")
     print("Removing Old Version...")
-    shell.run("rm clclient")
+    shell.run("rm clclient.lua")
     sleep(0.5)
     shell.run("wget https://raw.githubusercontent.com/nexus331/CrisisLink_EWS/refs/heads/main/CrisisLink/clclient.lua")
 end
