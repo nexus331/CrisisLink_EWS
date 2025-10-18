@@ -1,5 +1,6 @@
 local modem = peripheral.find("modem", rednet.open)
 local printer = peripheral.find("printer")
+shell.run("clear")
 print("CrisisLink EWS Reciever")
 print("Scanning for Emergency Code")
 redstone.setOutput("left", true)

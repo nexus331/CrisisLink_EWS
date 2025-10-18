@@ -1,7 +1,7 @@
 local protocol, message
 
 local modem = peripheral.find("modem", rednet.open)
-
+shell.run("clear")
 print ("CrisisLink Emergency Warning System")
 print("Please Type the Following Emergency Code")
 textutils.slowPrint("ACT-EWS")
