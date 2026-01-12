@@ -1,7 +1,6 @@
 -- Variables --
 local version = 1.2
 local protocol = "clpv2"
-local red_output = "left"
 
 -- Software Init --
 local modem = peripheral.find("modem", rednet.open)
@@ -14,22 +13,22 @@ sleep(3)
 
 local function Missile_Warning()
 rednet.broadcast("E1", protocol)
-term.write("Missile Warning Emergency Code Sent")
+print("Missile Warning Emergency Code Sent")
 end
 
 local function Attack_Warning()
 rednet.broadcast("E2", protocol)
-term.write("Attack Warning Emergency Code Sent")
+print("Attack Warning Emergency Code Sent")
 end
 
 local function Evacuation_Order()
 rednet.broadcast("E3", protocol)
-term.write("Evacuation Order Emergency Code Sent")
+print("Evacuation Order Emergency Code Sent")
 end
 
 local function Weather_Alert()
 rednet.broadcast("E4", protocol)
-term.write("Missile Warning Emergency Code Sent")
+print("Weather Alert Emergency Code Sent")
 end
 
 -- Main Code -- 
