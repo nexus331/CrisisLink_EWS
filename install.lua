@@ -3,8 +3,8 @@ print("Welcome to the CrisisLink Installer")
 print("Copyright: CraftNet Corp. 2025")
 
 textutils.slowPrint("Please Select the Edition you wish to Install.")
-print("[1] CrisisLink Server")
-print("[2] CrisisLink Client")
+print("[1] Install CrisisLink Server")
+print("[2] Install CrisisLink Client")
 print("[3] Update CrisisLink Server")
 print("[4] Update CrisisLink Client")
 
