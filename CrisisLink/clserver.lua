@@ -44,7 +44,7 @@ print("[E1] Missile Warning")
 print("[E2] Attack Warning")
 print("[E3] Evacuation Order")
 print("[E4] Weather Alert")
-local option = io.read("Selection: ")
+local option = read("Selection: ")
 
 if option == "E1" then
     Missile_Warning()
