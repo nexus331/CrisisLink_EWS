@@ -15,25 +15,21 @@ sleep(3)
 local function Missile_Warning()
 rednet.broadcast("E1", protocol)
 term.write("Missile Warning Emergency Code Sent")
-textutils.slowPrint("Crisislink Emergency Warning System Activated")
 end
 
 local function Attack_Warning()
 rednet.broadcast("E2", protocol)
 term.write("Attack Warning Emergency Code Sent")
-textutils.slowPrint("Crisislink Emergency Warning System Activated")
 end
 
 local function Evacuation_Order()
 rednet.broadcast("E3", protocol)
 term.write("Evacuation Order Emergency Code Sent")
-textutils.slowPrint("Crisislink Emergency Warning System Activated")
 end
 
 local function Weather_Alert()
 rednet.broadcast("E4", protocol)
 term.write("Missile Warning Emergency Code Sent")
-textutils.slowPrint("Crisislink Emergency Warning System Activated")
 end
 
 -- Main Code -- 
@@ -44,7 +40,8 @@ print("[E1] Missile Warning")
 print("[E2] Attack Warning")
 print("[E3] Evacuation Order")
 print("[E4] Weather Alert")
-local option = read("Selection: ")
+io.write("Selection: ")
+local option = io.read()
 
 if option == "E1" then
     Missile_Warning()
